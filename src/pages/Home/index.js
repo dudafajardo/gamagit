@@ -13,7 +13,7 @@ export default function App(props) {
       const repositories = response.data;
       const repositoriesName = [];
       repositories.map((repository) => {
-        repositoriesName.push(repository.name);
+        return repositoriesName.push(repository.name);
       });
       localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
       setErro(false);
